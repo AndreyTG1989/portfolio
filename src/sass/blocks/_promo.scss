@@ -1,18 +1,37 @@
 .promo {
-    min-height: 100vh;
-    position  : relative;
-    background: url('../img/background.jpg') no-repeat 50%/cover;
+    min-height : 100vh;
+    position   : relative;
+    background : url('../img/background.jpg') no-repeat 50%/cover;
     padding-top: 205px;
-    &__title{
-        width: 535px;
+
+    &__title {
+        width     : 535px;
         margin-top: 10px;
     }
-    &__buttons{
-        margin-top: 25px;
-        display: flex;
-        width: 250px;
+
+    &__subtitle {
+        position    : relative;
+        z-index     : 2;
+        padding-left: 11px;
+        @include before_circle;
     }
-    &__link{
-        color: black;
+
+    &__buttons {
+        margin-top     : 25px;
+        display        : flex;
+        width          : 317px;
+        justify-content: space-between;
+        align-items    : center;
+    }
+
+    &__link {
+        color      : black;
+        cursor     : pointer;
+        font-weight: bold;
+        &:hover{
+            text-decoration: none;
+            color: black;
+            background-color: $main-color-btn;
+        }
     }
 }

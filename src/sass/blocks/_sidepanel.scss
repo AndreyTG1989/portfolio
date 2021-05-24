@@ -1,0 +1,52 @@
+.sidepanel {
+    position       : fixed;
+    top            : 230px;
+    left           : 50px;
+    display        : flex;
+    height         : 340px;
+    flex-direction : column;
+    justify-content: space-between;
+    align-items    : center;
+    z-index        : 3;
+
+
+    &__link {
+        path{
+            fill: black;
+            transition-property: fill;
+            transition-duration: 0.50s;
+
+        }
+        &:hover {
+            .facebok path {
+                transition-duration: 0.50s;
+                fill: #3b5998;
+            }
+            .instagram path{
+                transition-duration: 0.50s;
+                fill: #C13584;
+            }
+            .github path{
+                transition-duration: 0.50s;
+                fill: rgb(77, 72, 72);
+            }
+        }
+    }
+
+    &__divider {
+        width           : 2px;
+        height          : 70px;
+        background-color: black;
+    }
+
+    &__text {
+        width : 25px;
+        height: 150px;
+
+        span {
+            transform: rotate(-90deg) translate(-35%, -260%);
+            display  : block;
+            width    : 150px;
+        }
+    }
+}
